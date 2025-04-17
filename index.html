@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dashboard prototype</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<!-- Sidebar/Navegación lateral -->
+		<aside class="sidebar">
+			<div class="sidebar-header">
+				<h1 class="logo">Dashboard Prototype</h1>
+				<button class="mobile-close-btn">×</button>
+			</div>
+			<nav class="sidebar-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link active">
+							<span class="nav-icon">Dashboard</span>
+							<span class="nav-text">Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span class="nav-icon">Analíticas</span>
+							<span class="nav-text">Analíticas</span>
+						</a>
+					</li>
+					<li class="nav-group">
+						<div class="nav-group-header">
+							<span class="nav-icon">Tablas</span>
+							<span class="nav-text">Tablas</span>
+							<span class="nav-arrow"></span>
+						</div>
+						<ul class="nav-group-items">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="nav-text">Tabla Básica</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="nav-text">Tabla de Datos</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-group">
+						<div class="nav-group-header">
+							<span class="nav-icon">Formularios</span>
+							<span class="nav-text">Formularios</span>
+							<span class="nav-arrow"></span>
+						</div>
+						<ul class="nav-group-items">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="nav-text">Elementos de
+										Formulario</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="nav-text">Estructura de
+										Formulario</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span class="nav-icon">Calendario</span>
+							<span class="nav-text">Calendario</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+							<span class="nav-icon">Configuración</span>
+							<span class="nav-text">Configuración</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!-- Contenido Principal -->
+		<main class="main-content">
+			<!-- Header -->
+			<header class="header">
+				<div class="header-left">
+					<button class="sidebar-toggle">
+						<span class="toggle-icon"></span>
+					</button>
+					<div class="search-form">
+						<input type="text" placeholder="Buscar...">
+						<button type="submit" class="search-btn"></button>
+					</div>
+				</div>
+				<div class="header-right">
+					<div class="notification-dropdown">
+						<button class="notification-btn"></button>
+						<div class="dropdown-content">
+							<!-- Contenido de notificaciones -->
+						</div>
+					</div>
+					<div class="user-dropdown">
+						<button class="user-btn">
+							<div class="user-avatar"></div>
+							<span class="user-name">Admin</span>
+						</button>
+						<div class="dropdown-content">
+							<!-- Menú de usuario -->
+							<a href="#">Mi Perfil</a>
+							<a href="#">Configuración</a>
+							<a href="#">Cerrar Sesión</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Contenido del Dashboard -->
+			<div class="dashboard-content">
+				<div class="content-header">
+					<h2 class="page-title">Dashboard</h2>
+					<nav class="breadcrumb">
+						<ol>
+							<li><a href="#">Inicio</a></li>
+							<li>Dashboard</li>
+						</ol>
+					</nav>
+				</div>
+
+				<!-- Widgets de Estadísticas -->
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-card-body">
+							<div class="stat-icon"></div>
+							<div class="stat-info">
+								<h5 class="stat-title">Ingresos Totales</h5>
+								<h3 class="stat-value">$45,230</h3>
+								<p class="stat-growth">+2.5% desde el último mes</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-card-body">
+							<div class="stat-icon"></div>
+							<div class="stat-info">
+								<h5 class="stat-title">Usuarios Totales</h5>
+								<h3 class="stat-value">3,456</h3>
+								<p class="stat-growth">+3.2% desde el último mes</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-card-body">
+							<div class="stat-icon"></div>
+							<div class="stat-info">
+								<h5 class="stat-title">Nuevos Clientes</h5>
+								<h3 class="stat-value">245</h3>
+								<p class="stat-growth">+1.8% desde el último mes</p>
+							</div>
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-card-body">
+							<div class="stat-icon"></div>
+							<div class="stat-info">
+								<h5 class="stat-title">Órdenes Totales</h5>
+								<h3 class="stat-value">1,245</h3>
+								<p class="stat-growth">+5.3% desde el último mes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Gráficos y Tablas -->
+				<div class="dashboard-grid">
+					<!-- Gráfico Principal -->
+					<div class="chart-card">
+						<div class="card-header">
+							<h4 class="card-title">Estadísticas de Ingresos</h4>
+							<div class="card-actions">
+								<!-- Filtros y controles -->
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="chart-container">
+								<!-- Aquí irá el gráfico -->
+								<div class="chart-placeholder">Gráfico de ingresos
+									mensuales</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Gráfico Secundario -->
+					<div class="chart-card">
+						<div class="card-header">
+							<h4 class="card-title">Usuarios por Región</h4>
+							<div class="card-actions">
+								<!-- Filtros y controles -->
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="chart-container">
+								<!-- Aquí irá el gráfico -->
+								<div class="chart-placeholder">Gráfico de usuarios por
+									región</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tabla de Transacciones Recientes -->
+					<div class="table-card">
+						<div class="card-header">
+							<h4 class="card-title">Transacciones Recientes</h4>
+							<div class="card-actions">
+								<button class="view-all-btn">Ver Todo</button>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-container">
+								<table class="data-table">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Cliente</th>
+											<th>Fecha</th>
+											<th>Monto</th>
+											<th>Estado</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>#TR-001</td>
+											<td>Juan Pérez</td>
+											<td>12/04/2025</td>
+											<td>$120.00</td>
+											<td>Completado</td>
+										</tr>
+										<tr>
+											<td>#TR-002</td>
+											<td>María López</td>
+											<td>11/04/2025</td>
+											<td>$85.50</td>
+											<td>Completado</td>
+										</tr>
+										<tr>
+											<td>#TR-003</td>
+											<td>Carlos Gómez</td>
+											<td>10/04/2025</td>
+											<td>$320.75</td>
+											<td>Pendiente</td>
+										</tr>
+										<tr>
+											<td>#TR-004</td>
+											<td>Ana García</td>
+											<td>09/04/2025</td>
+											<td>$45.00</td>
+											<td>Completado</td>
+										</tr>
+										<tr>
+											<td>#TR-005</td>
+											<td>Roberto Sánchez</td>
+											<td>08/04/2025</td>
+											<td>$250.00</td>
+											<td>Cancelado</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tabla de Últimos Usuarios -->
+					<div class="table-card">
+						<div class="card-header">
+							<h4 class="card-title">Últimos Usuarios</h4>
+							<div class="card-actions">
+								<button class="view-all-btn">Ver Todo</button>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-container">
+								<table class="data-table">
+									<thead>
+										<tr>
+											<th>Usuario</th>
+											<th>Email</th>
+											<th>Rol</th>
+											<th>Fecha de Registro</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Laura Martínez</td>
+											<td>laura@ejemplo.com</td>
+											<td>Cliente</td>
+											<td>15/04/2025</td>
+										</tr>
+										<tr>
+											<td>Pedro Ramírez</td>
+											<td>pedro@ejemplo.com</td>
+											<td>Cliente</td>
+											<td>14/04/2025</td>
+										</tr>
+										<tr>
+											<td>Sofía Torres</td>
+											<td>sofia@ejemplo.com</td>
+											<td>Administrador</td>
+											<td>13/04/2025</td>
+										</tr>
+										<tr>
+											<td>Miguel Flores</td>
+											<td>miguel@ejemplo.com</td>
+											<td>Cliente</td>
+											<td>12/04/2025</td>
+										</tr>
+										<tr>
+											<td>Carmen Ruiz</td>
+											<td>carmen@ejemplo.com</td>
+											<td>Cliente</td>
+											<td>11/04/2025</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="copyright">
+					<p>&copy; 2025 Dashboard PROTOTIPO. Todos los derechos reservados.</p>
+				</div>
+				<div class="footer-links">
+					<a href="#">Política de Privacidad</a>
+					<a href="#">Términos de Servicio</a>
+				</div>
+			</footer>
+		</main>
+	</div>
+</body>
+
+</html>
