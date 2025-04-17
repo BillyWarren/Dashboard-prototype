@@ -24,12 +24,43 @@ Esta herramienta está diseñada para [caso de uso principal], brindando una sol
 ## 🚀 Instalación
 
 Sigue estos pasos para instalar y ejecutar el proyecto localmente:
-
 ```bash
 git clone https://github.com/tu_usuario/tu_repositorio.git
 cd tu_repositorio
 npm install # o el gestor de paquetes correspondiente
-npm run start```
+npm run start
+```
+
+# 🛠️ Uso
+Una vez ejecutado el proyecto:
+	1.	Ingresa a http://localhost:3000/ (o la URL definida)
+	2.	Utiliza las siguientes rutas principales:
+	•	/login
+	•	/dashboard
+	•	/api/v1/...
+
+Puedes hacer uso de live-server o browser-sync:
+    [![live-server](https://www.npmjs.com/package/live-server)](LIVE_SERVER)
+    [![browser-sync](https://github.com/BrowserSync/browser-sync](BROWSER-SYNC)
+
+## 🔥 Tecnologías Utilizadas
+
+|     HERRAMIENTA    | Descripcion    |
+|:------------:|:-----------:|
+|  HTML / CSS |   FrontEnd  |
+|     JavaScripts |   Scripts |
+
+## 📈 Roadmap
+    •	Funcionalidad Básica
+    •	Agregar autenticación OAuth
+    •	Implementar base de Datos
+    •	Integrar sistema de notificaciones
+    - Implementar posibilidad de exportar CSV
+    - Posibilidad de importar datos CSV
+    •	Implementar soporte multilenguaje
+    - 
+
+`
 
 # 🛠️ Uso
 Una vez ejecutado el proyecto:
