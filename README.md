@@ -30,7 +30,8 @@ git clone https://github.com/tu_usuario/tu_repositorio.git
 cd tu_repositorio
 npm install # o el gestor de paquetes correspondiente
 npm run start```
-## 🛠️ Uso
+
+# 🛠️ Uso
 Una vez ejecutado el proyecto:
 	1.	Ingresa a http://localhost:3000/ (o la URL definida)
 	2.	Utiliza las siguientes rutas principales:
